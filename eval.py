@@ -21,11 +21,11 @@ parser.add_argument('--max_frames',
 parser.add_argument(
     '--eval_frames',
     type=int,
-    default=300,
+    default=400,
     help='Input length to the network for testing; 0 uses the whole files')
 parser.add_argument('--batch_size',
                     type=int,
-                    default=200,
+                    default=160,
                     help='Batch size, number of speakers per batch')
 parser.add_argument('--max_seg_per_spk',
                     type=int,
@@ -64,15 +64,15 @@ parser.add_argument('--trainfunc',
 ## Model definition
 parser.add_argument('--n_mels',
                     type=int,
-                    default=40,
+                    default=64,
                     help='Number of mel filterbanks')
 parser.add_argument('--log_input',
                     type=bool,
-                    default=False,
+                    default=True,
                     help='Log input features')
 parser.add_argument('--model',
                     type=str,
-                    default='',
+                    default='ResNetSE34V2',
                     help='Name of model definition')
 parser.add_argument('--encoder_type',
                     type=str,
