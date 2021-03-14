@@ -1,6 +1,6 @@
 # VoxMovies
 
-This repository contains evaluation script for VoxMovies dataset.
+This repository contains evaluation scripts and pretrained models for VoxMovies dataset.
 
 ![teaser](images/teaser.jpg)
 
@@ -17,8 +17,8 @@ pip install -r requirements.txt
 - For e2, e3 and e4 test pairs, you also need both VoxCeleb1 dev and test set. Please download them from [here](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html).
 
 ### Evaluation
-- You need to aggregate VoxCeleb1 and VoxMovies into *args.test_path*. We've used symlink for this.
-- Please note that directory PATH_TO_VOXCELEB1 needs to contain both VoxCeleb1 dev & test wavfiles.
+- You need to put VoxCeleb1 and VoxMovies into *args.test_path*. We've used symlink for this.
+- Please note that PATH_TO_VOXCELEB1 directory needs to contain both VoxCeleb1 dev & test wavfiles.
 
 ```
 mkdir data
@@ -41,6 +41,9 @@ python eval.py --initial_model PATH_TO_PRETRAINED_MODEL --test_list PATH_TO_TEST
 |:--------------------:|:----:|:----:|:----:|:----:|:-----:|
 | [baseline_v2_ap.model](http://www.robots.ox.ac.uk/~joon/data/baseline_v2_ap.model) | 6.09 | 7.40 | 7.50 | 9.23 | 10.47 |
 |    [finetuned.model](https://drive.google.com/file/d/1QVKn7U4u01uDWTinxGmpnkWoqVOFDY4U/view?usp=sharing)   | 5.76 | 7.10 | 8.36 | 7.37 |  9.55 |
+
+### Codebase
+This evaluation code is based on [clova voxceleb trainer](https://github.com/clovaai/voxceleb_trainer). Please refer to this repo if you want to train/finetune the model.
 
 ### Citation
 If you make use of this code, kindly reference:

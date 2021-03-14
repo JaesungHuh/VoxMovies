@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import time, pdb, numpy
-from tuneThreshold import tuneThresholdfromScore
+from tune_threshold import tuneThresholdfromScore
 import random
 
 class LossFunction(nn.Module):
