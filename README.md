@@ -17,8 +17,8 @@ pip install -r requirements.txt
 - For e2, e3 and e4 test pairs, you also need both VoxCeleb1 dev and test set. Please download them from [here](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html).
 
 ### Evaluation
-- You need to aggregate VoxCeleb1 and VoxMovies into our test_path. We've used symlink for this.
-- Please note that PATH_TO_VOXCELEB needs to contain both VoxCeleb1 dev & test wavfiles.
+- You need to aggregate VoxCeleb1 and VoxMovies into *args.test_path*. We've used symlink for this.
+- Please note that directory PATH_TO_VOXCELEB needs to contain both VoxCeleb1 dev & test wavfiles.
 
 ```
 mkdir data
@@ -29,7 +29,7 @@ ln -s PATH_TO_VOXMOVIES_TEST_SET voxmovies_test
 
 Then, run the script below.
 ```python
-python eval.py --initial_model PATH_TO_PRETRAINED_MODEL --test_list PATH_TO_TEST_PAIRS--test_path data/
+python eval.py --initial_model PATH_TO_PRETRAINED_MODEL --test_list PATH_TO_TEST_PAIRS --test_path data/
 ```
 
 ### Pretrained models
