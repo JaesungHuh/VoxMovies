@@ -3,7 +3,7 @@
 Please cite the following if you make use of the code.
 
 ```
-@InProceedings{Brown21b,
+@inproceedings{Brown21b,
     title={Playing a Part: Speaker Verification at the Movies},
     author={Andrew Brown and Jaesung Huh and Arsha Nagrani and Joon Son Chung and Andrew Zisserman},
     year={2021},

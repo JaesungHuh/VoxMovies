@@ -18,7 +18,7 @@ pip install -r requirements.txt
 
 ### Evaluation
 - You need to aggregate VoxCeleb1 and VoxMovies into *args.test_path*. We've used symlink for this.
-- Please note that directory PATH_TO_VOXCELEB needs to contain both VoxCeleb1 dev & test wavfiles.
+- Please note that directory PATH_TO_VOXCELEB1 needs to contain both VoxCeleb1 dev & test wavfiles.
 
 ```
 mkdir data
