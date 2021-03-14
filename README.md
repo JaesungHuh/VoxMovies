@@ -34,7 +34,7 @@ python eval.py --initial_model PATH_TO_PRETRAINED_MODEL --test_list PATH_TO_TEST
 
 ### Pretrained models
 - Both pretrained model and finetuned model are provided below.
-- Note that baseline_v2_ap.model is publicly available. Please refer to [here](https://github.com/clovaai/voxceleb_trainer) for more details about model architecture and training procedures.
+- Note that baseline_v2_ap.model has already been publicly available. Please refer to [here](https://github.com/clovaai/voxceleb_trainer) for more details about model architecture and training procedures.
 
 **Evaluation results (EER %) with VoxMovies test sets**
 |       Test pairs      |  e1  |  e2  |  e3  |  e4  |   e5  |
@@ -43,7 +43,7 @@ python eval.py --initial_model PATH_TO_PRETRAINED_MODEL --test_list PATH_TO_TEST
 |    [finetuned.model](https://drive.google.com/file/d/1QVKn7U4u01uDWTinxGmpnkWoqVOFDY4U/view?usp=sharing)   | 5.76 | 7.10 | 8.36 | 7.37 |  9.55 |
 
 ### Codebase
-This evaluation code is based on [clova voxceleb trainer](https://github.com/clovaai/voxceleb_trainer). Please refer to this repo if you want to train/finetune the model.
+This evaluation code is largely based on [clova voxceleb trainer](https://github.com/clovaai/voxceleb_trainer). Please refer to this repo if you want to train/finetune the model.
 
 ### Citation
 If you make use of this code, kindly reference:
