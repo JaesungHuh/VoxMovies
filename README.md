@@ -4,7 +4,7 @@ This repository contains evaluation scripts and pretrained models for VoxMovies 
 
 ![teaser](images/teaser.jpg)
 
-[project_page](https://www.robots.ox.ac.uk/~vgg/data/voxmovies/) [arxiv_paper](https://arxiv.org/abs/2010.15716)
+[project_page](https://mmai.io/datasets/voxmovies/) [arxiv_paper](https://arxiv.org/abs/2010.15716)
 
 
 ### Dependencies
